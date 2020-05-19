@@ -1,0 +1,157 @@
+usage: removeOutliers.py [-h] -fname [FNAME]
+                         [-method [{IQrange,median,Nsigma}]] [-scale [SCALE]]
+                         -comp COMP [COMP ...]
+                         [-periods PERIODS [PERIODS ...]] [-writeOutliers]
+
+removeOutliers -> Removes outliers in the series file.
+
+The scripts removes the outliers in the converted time series file using one of the
+Interquartile range, median and Nsigma methods. If one or more outliers are detected
+by the outlier detection method, they are removed from the series file, and outliers
+are written into a seperate time series file named [?]_outliers.tse by specifiying
+-writeOutliers argument.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -fname [FNAME]        [?](comp).tse file name to be removed outliers, which
+                        could contain either only one GPS component or all GPS
+                        component.
+  -method [{IQrange,median,Nsigma}]
+                        To choose which method will be used to detect and
+                        remove outliers from the time series. The methods are
+                        IQrange, median, and Nsigma.
+  -scale [SCALE]        Scale factor used to determine the upper and lower
+                        limits in the outlier(s) detection analysis.
+  -comp COMP [COMP ...]
+                        Outliers in which GPS component to be removed. The
+                        argument is required and suitable for multiple
+                        entries. Multiple entry order is not necessary.
+  -periods PERIODS [PERIODS ...]
+                        Seasonal periodicities to detrend the data. Frequently
+                        used cycles is tropical, chandler, draconitic years,
+                        and its/theirs harmonics. These have some label to
+                        make the usage easier. The label has two digit. The
+                        first digit is the first letter of corresponding cycle
+                        (i.e. one of T, C, and D), and the second digit is for
+                        the number of harmonics. For example, T2 stands for
+                        from a tropical year through its second harmonic (e.g.
+                        365.2500 and 183.6250 days). Another example is C1
+                        which is for a chandler year (e.g. 433 days). Beyond
+                        these label one may introduce one or more cycle as
+                        float number in days (e.g. 14.66 days). Please check
+                        Ex3.
+  -writeOutliers        A choice to be write down the outliers or not
+
+*** EXAMPLES ***
+
+---------
+:: Ex1 ::
+    Let the time series file includes all components for the TEST station. To remove
+    outliers according to the IQrange (interquartile range) method.
+
+    removeOutliers.py -fname TEST.tse -comp east north up -writeOutliers
+
+        ===================================================================
+        removeOutliers.py is running and using the parameters:
+        ===================================================================
+            filename : TEST.tse
+              method : IQrange
+               scale : 3
+           component : east
+           component : north
+           component : up
+        ===================================================================
+
+                ******* east *******
+        # 	 Method 	 Scale 		 nOutliers
+        ---	--------	-------		-----------
+        1	IQrange	           3		     0
+
+        TESTeast.tse file has been created...
+
+                ******* north *******
+        # 	 Method 	 Scale 		 nOutliers
+        ---	--------	-------		-----------
+        1	IQrange	           3		     0
+
+        TESTnorth.tse file has been created...
+
+                ******* up *******
+        # 	 Method 	 Scale 		 nOutliers
+        ---	--------	-------		-----------
+        1	IQrange	           3		     1
+        2	IQrange	           3		     0
+
+        TESTup.tse file has been created...
+        TESTup_outliers.tse file has been created...
+
+    NOTE: As clearly seen in the command, although -scale and -method arguments have
+          not been introduced in the command line, they are set default as 3 and IQrange,
+          respectively. Component order under -comp flag is not necessary, so it could be
+          as up east north.
+
+---------
+:: Ex2 ::
+    Let's remove the outliers only for up component with the same configuration in Ex1.
+
+    removeOutliers.py -fname TESTup.tse -comp up -writeOutliers
+
+        ===================================================================
+        removeOutliers.py is running and using the parameters:
+        ===================================================================
+            filename : TESTup.tse
+              method : IQrange
+               scale : 3
+           component : up
+        ===================================================================
+
+                ******* up *******
+        # 	 Method 	 Scale 		 nOutliers
+        ---	--------	-------		-----------
+        1	IQrange	           3		     1
+        2	IQrange	           3		     0
+
+        TESTup.tse file has been created...
+        TESTup_outliers.tse file has been created...
+
+    NOTE: Although time series file contains only up component, -comp flag has been introduced.
+          That is because the -comp flag is a required argument.
+
+---------
+:: Ex3 ::
+    Introducing some cycles to examples above.
+
+    removeOutliers.py -fname TESTup.tse -comp up -writeOutliers -periods 13.66 T1
+
+        ===================================================================
+        removeOutliers.py is running and using the parameters:
+        ===================================================================
+            filename : TESTup.tse
+              method : IQrange
+               scale : 3
+           component : up
+             periods : 13.66
+             periods : T1
+        ===================================================================
+
+                ******* up *******
+        # 	 Method 	 Scale 		 nOutliers
+        ---	--------	-------		-----------
+        1	IQrange	           3		     0
+
+        TESTup.tse file has been created...
+
+    This file is part of GCTS v1.0.
+
+    GCTS v1.0 is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    GCTS v1.0 is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with GCTS v1.0.  If not, see <https://www.gnu.org/licenses/>.

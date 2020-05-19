@@ -1,0 +1,116 @@
+usage: conv2tse.py [-h] -fname FNAME [FNAME ...]
+                   [-fromWhich [{gipsy,gamit,bernese}]]
+                   [-comp [{all,east,north,up}]] [-offset OFFSET [OFFSET ...]]
+                   [-unit UNIT UNIT] [-dateFormat [DATEFORMAT]]
+                   [-siteID SITEID [SITEID ...]]
+
+conv2tse -> Converts to [?].tse file.
+
+The script converts the time series or coordinate files produced by GPS/GNSS software
+such as Gipsy-Oasis II, GipsyX, Bernese, and Gamit/Globk into its own format. It has
+two main part including a header beginning with "*" and an observation part. In the 
+observation part, the time label located at the end. That's why the GCTS_1.0 allows
+one to use any of date formats which are year, month, day [yyyymmdd], modified julian
+date [mjd], year and day of year [yearANDdoy], GPS week and day of week [gweekANDdow],
+and decimal year [decimalYear].
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -fname FNAME [FNAME ...]
+                        Original time series file supplied by a user to be
+                        converted to the suitable time series format (i.e.
+                        [?].tse file)
+  -fromWhich [{gipsy,gamit,bernese}]
+                        From which source, a GPS/GNSS data processing
+                        software, an original time series has been created.
+                        For instance, Gipsy-Oasis, GipsyX, Bernese,
+                        Gamit/Globk etc.
+  -comp [{all,east,north,up}]
+                        Which GPS component will be taken from the original
+                        time series and be converted to the *.tse format (i.e.
+                        east, north, up, or all)
+  -offset OFFSET [OFFSET ...]
+                        Offset(s) date. The date format has to be same with
+                        specified format by -dateFormat argument. For multiple
+                        offset entries, -offset print("Something went wrong!")
+                        argument has to be defined just before offset date.
+  -unit UNIT UNIT       The argument has two variable. The first one is the
+                        unit of the original time series file, and the other
+                        is that of output file. The unit variables must be two
+                        of mm, cm, dm, m, km.
+  -dateFormat [DATEFORMAT]
+                        Date format is specified the time label in the output
+                        time series file. It could be any of the format listed
+                        in discription above.
+  -siteID SITEID [SITEID ...]
+                        4-digit site IDs to be extracted. If source file from
+                        gipsy, this argument could not be specified, that's
+                        why site ID is extracted from filename.
+
+*** EXAMPLES ***
+
+---------
+:: Ex1 ::
+    Original file is from GipsyX software, the series unit is meter, it has also an
+    offset happened at 2014 1 1. Let the desired unit milimeter, dateFormat yyyymmdd,
+    and all GPS component included for the station TEST.
+
+    conv2tse.py -fname TEST.series -offset 2014 1 1 -unit m mm -dateFormat yyyymmdd
+
+        ===================================================================
+        conv2tse.py is running and using the parameters:
+        ===================================================================
+            filename : TEST.series
+           fromWhich : gipsy
+           component : all
+              offset : 2014 1 1
+                unit : m mm
+          dateFormat : yyyymmdd
+        ===================================================================
+
+        TEST.tse file has been created...
+
+    NOTE: As clearly seen in the command, although -fromWhich and -comp arguments have
+          not been introduced in the command line, they are set default as gipsy and all,
+          respectively.
+
+---------
+:: Ex2 ::
+    An additional offset at 58605, only for east component, and date format as modified
+    julian date [mjd] in addition to the example above.
+
+    conv2tse.py -fname TEST.series -offset 56658 -offset 58605 \
+                -unit m mm -dateFormat yyyymmdd -comp east
+
+        ===================================================================
+        conv2tse.py is running and using the parameters:
+        ===================================================================
+            filename : TEST.series
+           fromWhich : gipsy
+           component : east
+              offset : 56658
+              offset : 58605
+                unit : m mm
+          dateFormat : mjd
+        ===================================================================
+
+        TESTeast.tse file has been created...
+
+    NOTE: As stated in description of -offset argument, each of offset should be
+          introduced under -offset argument. Moreover, the date format should be
+          overlapped with the specified -dateFormat.
+
+    This file is part of GCTS v1.0.
+
+    GCTS v1.0 is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    GCTS v1.0 is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with GCTS v1.0.  If not, see <https://www.gnu.org/licenses/>.

@@ -1,0 +1,170 @@
+usage: evalCampaign.py [-h] -fname [FNAME] [-periods PERIODS [PERIODS ...]]
+                       [-alpha [ALPHA]] [-nRND [NRND]] [-fs [FS]]
+                       [-kappa [KAPPA]] [-incr [INCR]] [-repeat [REPEAT]]
+                       [-ols] [-writeModel]
+
+evalCampaign -> analyzes the GPS campaign time-series.
+
+The script analyzes the campaign time-series using either a weight matrix or a unit
+matrix (i.e. the ordinary least-squares estimation). The weight matrix is composed
+of the white and flicker noise combination, which are estimated/interpolated via 
+the new approach published by Duman and Sanli (2020). After analyzing, the model
+is written into a file by specifiying -writeModel argument.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -fname [FNAME]        [?](comp).tse file name to be analyzed, which could
+                        contain only one GPS component or only one column with
+                        its standard deviation.
+  -periods PERIODS [PERIODS ...]
+                        Seasonal periodicities to detrend the data. Frequently
+                        used cycles is tropical, chandler, draconitic years,
+                        and its/theirs harmonics. These have some label to
+                        make the usage easier. The label has two digit. The
+                        first digit is the first letter of corresponding cycle
+                        (i.e. one of T, C, and D), and the second digit is for
+                        the number of harmonics. For example, T2 stands for
+                        from a tropical year through its second harmonic (e.g.
+                        365.2500 and 183.6250 days). Another example is C1
+                        which is for a chandler year (e.g. 433 days). Beyond
+                        these label one may introduce one or more cycle as
+                        float number in days (e.g. 14.66 days). Please check
+                        Ex3.
+  -alpha [ALPHA]        Significance level to determine the search space
+                        limits. Search space is a set containing a noise
+                        amplitude with 1 - alpha confidence level.
+  -nRND [NRND]          number of randomly generated values for noise
+                        amplitude within the search area.
+  -fs [FS]              Observation frequency, which is set to 365.25 as
+                        default.
+  -kappa [KAPPA]        Spectral index for colored noise. Kappa is set to -1
+                        which is for flicker noise.
+  -incr [INCR]          Weighted least-squares solution is made from all
+                        mutual combinations of random points produced in the
+                        search area for both white and flicker noise. The
+                        posterior variances calculated from all solutions
+                        create a smooth and clear surface with their
+                        corresponding noise amplitudes. The -incr argument is
+                        the amount of INCREMENT used in order to create mesh
+                        surface.
+  -repeat [REPEAT]      Theoretically, the most appropriate solution is the
+                        solution where the posterior variance is equal to 1.
+                        On the created posterior variance surface, the noise
+                        amplitudes corresponding to a value of 1 are
+                        estimated, then the weighted least-squares estimation
+                        are made again and the solution closest to 1 is
+                        selected. For a robust analysis, this process is
+                        repeated N times which is specified under -repeat
+                        argument.
+  -ols                  Ordinary least-squares estimation. If this argument is
+                        specified, time series data are analyzed without any
+                        weight matrix.
+  -writeModel           A choice to be write down the model values or not
+
+*** EXAMPLES ***
+
+---------
+:: Ex1 ::
+    Let a time-series for the east component of the site TEST. To analyze the series
+    according to the new approach:
+
+    evalCampaign.py -fname TESTeast.tse -nRND 30 -repeat 100 -writeModel
+
+	 ======================================================================================
+	 evalCampaign.py is running and using the parameters:
+	 ======================================================================================
+	    filename : TESTeast.tse
+	       alpha : 0.05
+		nRND : 30
+		  Fs : 365.25
+	       kappa : -1
+		incr : 0.025
+	      repeat : 100
+	  writeModel : on
+	 ======================================================================================
+
+	 --------------------------------------------------------------------------------------
+	  The statistical details of the time series file
+	 --------------------------------------------------------------------------------------
+	 Filename                           : /home/hduman/GCTS_1.1/example/TESTeast.tse
+	 First and Last Obs.   [yyyy/mm/dd] : from 2013/11/8 to 2017/1/14
+	 Length of Series         (in Days) : 1164 (3.19 years)
+	 Number of Observations   (in Days) : 15
+	 Percentage of Gaps                 : 98.71
+	 Number of Offset                   : 0
+	 --------------------------------------------------------------------------------------
+
+	 Progress |██████████████████████████████████████████████████| 100.0% Complete
+
+		   intercept:     4.5500 +-    2.7233 mm
+		       trend:   -25.7075 +-    3.5341 mm/year
+
+		         wna:     2.5759 mm
+		         fna:    12.4394 mm/year^0.25
+		          s0:     1.00000044 mm
+
+	 TESTeast_model.tse file has been created...
+
+	Elapsed time : 47.6 sec
+
+    NOTE: As clearly seen in the command, although some of the arguments have
+          not been introduced in the command line, they are set as default values.
+	  One can specify the arguments the desired values.
+
+---------
+:: Ex2 ::
+    Let a time-series for the east component of the site TEST. To analyze the series
+    according to the ordinary least-sqaures estimates:
+
+    evalCampaign.py -fname TESTeast.tse -ols
+
+	 ======================================================================================
+	 evalCampaign.py is running and using the parameters:
+	 ======================================================================================
+	    filename : TESTeast.tse
+	       alpha : 0.05
+		nRND : None
+		  Fs : 365.25
+	       kappa : -1
+		incr : 0.025
+	      repeat : None
+	  writeModel : off
+	 ======================================================================================
+
+	 --------------------------------------------------------------------------------------
+	  The statistical details of the time series file
+	 --------------------------------------------------------------------------------------
+	 Filename                           : /home/hduman/GCTS_1.1/example/TESTeast.tse
+	 First and Last Obs.   [yyyy/mm/dd] : from 2013/11/8 to 2017/1/14
+	 Length of Series         (in Days) : 1164 (3.19 years)
+	 Number of Observations   (in Days) : 15
+	 Percentage of Gaps                 : 98.71
+	 Number of Offset                   : 0
+	 --------------------------------------------------------------------------------------
+
+	 Ordinary Least-squares estimation
+
+		   intercept:     4.5158  +-    1.6092 mm
+		       trend:   -24.7313  +-    1.1379 mm/year
+
+		          s0:     4.25816374       mm
+
+	Elapsed time : 0.0 sec
+
+    NOTE: This example is the same with the previous one but the series analyzed via the
+	  ordinary least-squares-estimates.
+
+    This file is part of GCTS v1.0.
+
+    GCTS v1.0 is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    GCTS v1.0 is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with GCTS v1.0.  If not, see <https://www.gnu.org/licenses/>.

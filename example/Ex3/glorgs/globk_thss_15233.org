@@ -1,0 +1,655 @@
+Globk Analysis
+
+ +++++++++++++++++++++++++++++++++++++
+ + GLORG                 Version 5.19 +
+ +++++++++++++++++++++++++++++++++++++
+
+
+ Stabilization with  20.0% constant,  80.0% site dependent weighting.
+ Delete sites with   3.0-sigma condition.
+ Height variance factor      10.00 Position,     10.00 Velocity
+ For Position: Min dH sigma 0.0050 m;    Min RMS 0.0030 m,    Min dNE sigma 0.00050 m
+ For Velocity: Min dH sigma 0.0050 m/yr; Min RMS 0.0030 m/yr, Min dNE sigma 0.00010 m/yr
+ Sigma Ratio to allow use: Position   3.00 Velocity   3.00
+
+====================================================================================================
+ Starting Position stabilization iteration   1 L1508211200_thss.glx
+ For   18 sites in origin, min/max height sigma       7.42      9.28 mm; Median        8.50 mm, Tol      15.00 mm L1508211200_thss.glx
+
+ Position system stabilization results 
+ --------------------------------------- 
+ X Rotation  (mas)    -1.68164 +-    1.20217 Iter  1 L1508211200_thss.glx
+ Y Rotation  (mas)    -1.38965 +-    1.24319 Iter  1 L1508211200_thss.glx
+ Z Rotation  (mas)    -1.13129 +-    1.34501 Iter  1 L1508211200_thss.glx
+ X Translation (m)    -0.15389 +-    0.03698 Iter  1 L1508211200_thss.glx
+ Y Translation (m)     0.00454 +-    0.03604 Iter  1 L1508211200_thss.glx
+ Z Translation (m)    -0.06867 +-    0.03847 Iter  1 L1508211200_thss.glx
+ Condition Sigmas used     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+Sites and relative sigmas used in stabilization
+VILL_GPS   1.00  REYK_GPS   1.00  CRO1_GPS   1.00  AREQ_GPS   1.00  YELL_GPS   1.00  TRAK_GPS   1.00 
+HOB2_GPS   1.00  TOW2_GPS   1.00  GUAM_GPS   1.00  USUD_GPS   1.00  DAV1_GPS   1.00  POL2_GPS   1.00 
+KERG_GPS   1.00  KIRU_GPS   1.00  MATE_GPS   1.00  WTZR_GPS   1.00  NYAL_GPS   1.00  ZIMM_GPS   1.00 
+ For   54 Position Iter  1 Pre RMS    0.1186 m; Post RMS   0.10067 m L1508211200_thss.glx
+ For   18 sites in origin, min/max NE sigma       1.30      2.87 mm; Median        1.98 mm, Tol       2.03 mm L1508211200_thss.glx
+Deleting AREQ_GPS Position error   0.6679 m, relative variance     1.65 Nsigma     5.17
+Deleting USUD_GPS Position error   0.4482 m, relative variance     1.29 Nsigma     3.93
+
+====================================================================================================
+ Starting Position stabilization iteration   2 L1508211200_thss.glx
+ For   16 sites in origin, min/max height sigma       7.42      9.28 mm; Median        8.46 mm, Tol      15.00 mm L1508211200_thss.glx
+
+ Position system stabilization results 
+ --------------------------------------- 
+ X Rotation  (mas)    -0.01497 +-    0.09237 Iter  2 L1508211200_thss.glx
+ Y Rotation  (mas)    -0.04439 +-    0.10194 Iter  2 L1508211200_thss.glx
+ Z Rotation  (mas)     0.08561 +-    0.11144 Iter  2 L1508211200_thss.glx
+ X Translation (m)    -0.04597 +-    0.00298 Iter  2 L1508211200_thss.glx
+ Y Translation (m)     0.00722 +-    0.00278 Iter  2 L1508211200_thss.glx
+ Z Translation (m)    -0.00843 +-    0.00306 Iter  2 L1508211200_thss.glx
+ Condition Sigmas used     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+Sites and relative sigmas used in stabilization
+VILL_GPS   0.99  REYK_GPS   0.97  CRO1_GPS   1.01  YELL_GPS   0.95  TRAK_GPS   0.98  HOB2_GPS   1.00 
+TOW2_GPS   1.01  GUAM_GPS   1.13  DAV1_GPS   1.07  POL2_GPS   0.97  KERG_GPS   1.18  KIRU_GPS   0.85 
+MATE_GPS   0.90  WTZR_GPS   0.85  NYAL_GPS   0.80  ZIMM_GPS   0.79 
+ For   48 Position Iter  2 Pre RMS    0.0211 m; Post RMS   0.00723 m L1508211200_thss.glx
+ For   16 sites in origin, min/max NE sigma       1.12      2.64 mm; Median        1.90 mm, Tol       2.32 mm L1508211200_thss.glx
+Deleting REYK_GPS Position error   0.0294 m, relative variance     1.01 Nsigma     4.05
+Deleting YELL_GPS Position error   0.0208 m, relative variance     0.90 Nsigma     3.04
+Deleting GUAM_GPS Position error   0.0293 m, relative variance     1.61 Nsigma     3.19
+
+====================================================================================================
+ Starting Position stabilization iteration   3 L1508211200_thss.glx
+ For   13 sites in origin, min/max height sigma       7.42      9.27 mm; Median        8.36 mm, Tol      15.00 mm L1508211200_thss.glx
+
+ Position system stabilization results 
+ --------------------------------------- 
+ X Rotation  (mas)    -0.09421 +-    0.06484 Iter  3 L1508211200_thss.glx
+ Y Rotation  (mas)    -0.08704 +-    0.07459 Iter  3 L1508211200_thss.glx
+ Z Rotation  (mas)     0.07616 +-    0.08665 Iter  3 L1508211200_thss.glx
+ X Translation (m)    -0.04464 +-    0.00215 Iter  3 L1508211200_thss.glx
+ Y Translation (m)     0.00884 +-    0.00195 Iter  3 L1508211200_thss.glx
+ Z Translation (m)    -0.00631 +-    0.00233 Iter  3 L1508211200_thss.glx
+ Condition Sigmas used     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+Sites and relative sigmas used in stabilization
+VILL_GPS   1.01  CRO1_GPS   1.13  TRAK_GPS   1.00  HOB2_GPS   0.96  TOW2_GPS   1.02  DAV1_GPS   1.10 
+POL2_GPS   1.01  KERG_GPS   1.25  KIRU_GPS   0.85  MATE_GPS   0.89  WTZR_GPS   0.83  NYAL_GPS   0.80 
+ZIMM_GPS   0.77 
+ For   39 Position Iter  3 Pre RMS    0.0196 m; Post RMS   0.00478 m L1508211200_thss.glx
+ For   13 sites in origin, min/max NE sigma       1.06      2.57 mm; Median        1.88 mm, Tol       2.46 mm L1508211200_thss.glx
+Deleting TOW2_GPS Position error   0.0155 m, relative variance     1.13 Nsigma     3.04
+
+====================================================================================================
+ Starting Position stabilization iteration   4 L1508211200_thss.glx
+ For   12 sites in origin, min/max height sigma       7.42      9.27 mm; Median        8.46 mm, Tol      15.00 mm L1508211200_thss.glx
+
+ Position system stabilization results 
+ --------------------------------------- 
+ X Rotation  (mas)    -0.01838 +-    0.06412 Iter  4 L1508211200_thss.glx
+ Y Rotation  (mas)    -0.07079 +-    0.06909 Iter  4 L1508211200_thss.glx
+ Z Rotation  (mas)     0.03583 +-    0.08719 Iter  4 L1508211200_thss.glx
+ X Translation (m)    -0.04360 +-    0.00201 Iter  4 L1508211200_thss.glx
+ Y Translation (m)     0.00946 +-    0.00194 Iter  4 L1508211200_thss.glx
+ Z Translation (m)    -0.00873 +-    0.00231 Iter  4 L1508211200_thss.glx
+ Condition Sigmas used     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+Sites and relative sigmas used in stabilization
+VILL_GPS   1.03  CRO1_GPS   1.18  TRAK_GPS   1.05  HOB2_GPS   0.92  DAV1_GPS   1.12  POL2_GPS   1.04 
+KERG_GPS   1.29  KIRU_GPS   0.86  MATE_GPS   0.90  WTZR_GPS   0.83  NYAL_GPS   0.81  ZIMM_GPS   0.76 
+ For   36 Position Iter  4 Pre RMS    0.0194 m; Post RMS   0.00428 m L1508211200_thss.glx
+ For   12 sites in origin, min/max NE sigma       1.04      2.42 mm; Median        1.82 mm, Tol       2.32 mm L1508211200_thss.glx
+Rotating into local coordinates for equates
+ Checking covariance matrix after equate and force
+Globk Analysis
+
+
+---------------------------------------------------------
+ GLOBK Ver 5.29, Global solution
+---------------------------------------------------------
+
+ Solution commenced with: 2015/ 8/21  0: 0    (2015.6356)
+ Solution ended with    : 2015/ 8/21 23:59    (2015.6384)
+ Solution refers to     : 2015/ 8/21 11:59    (2015.6370) [Seconds tag  45.000]
+ Satellite IC epoch     : 2015/ 8/21 12: 0  0.00
+ GPS System Information : Time GPST Frame J2000 Precession IAU76 Radiation model BERNE Nutation IAU00 Gravity EGM08 EarthRad NONE  AntThrust NONE 
+ MODELS Used in Analysis: SD-WOB  | SD-UT1  | IERS10  | E-Tide  | K1-Tide | PoleTide| OC-Load | MPT2010 |  
+ ATM Delay Models Used  : GP25    | GP25    | GP25    | GP25    | 2nd Order Ion     | NONE    | UNKNOWN | 
+ Reference Frame        : IGb08           
+ Run time               : 2015/12/19 12: 3  8.00
+
+ There were         1 exps from          1 global files in the solution
+ There were       279433 data used,       0 data not used and       279433 data total
+ There were          150 global parameters estimated
+ There were    18 Sites,   18 Used Sites,    0 radio sources, and   31 Satellites
+
+ The  prefit chi**2 for      54 input parameters is     0.000
+
+ LIST file      : L1508211200_thss.glx
+ COMMON file    :  
+ GLOBK CMD file : globk_comb.cmd
+ GLORG CMD file : glorg_comb.cmd
+ APRIORI file   : ../tables/itrf08_comb.apr
+ APRIORI file   : ../tables/itrf08_comb.apr (glorg)
+ NUTATION file  :  
+ PLANETARY file :  
+ SD ORIENT file :  
+ PMU file       :  
+ BACK SOLN file :  
+ OUTGLOBAL file :  
+ SVS EPHEM file :  
+ SVS MARKOV file:  
+
+* RENAME REPORT (RNRP option)
+*   Sites             dN        sN       dE       sE     dU         sU  Units Compare date  EQ Dist EQ Name
+* EARTHQUAKE LOG FITS
+*  Sites             dN        sN       dE       sE     dU         sU   mm
+
+ Summary of GLOBK command file globk_comb.cmd
+-------------------------------------------------------------------------------
+* GLOBK command file to generate daily time series and to combine
+* h-files over 2 to 30 days.
+* For combination, set COMB as a globk command-line option to
+* invoke the saving of the output h-file
+* Last edited by rwk 130701
+* << column 1 must be blank if not comment >>
+* This group of commands must appear before any others:
+ srt_file @.srt
+ srt_dir +1
+# Optionally add a second eq_file for analysis-specific renames
+* End commands that must appear first
+* ITRF2008 augmented by now-defunct sites and recent IGS solutions;
+# matched to itrf08_comb.eq
+ apr_file ../tables/itrf08_comb.apr
+# Optionally add additional apr files for other sites
+* Set maximum chi2, prefit coordinate difference (m), and rotation (mas) for an h-file to be used;
+ max_chii 13 3 100
+# increase tolerances to include all files for diagnostics
+# Not necessary unless combining h-files with different a priori EOP
+ in_pmu ../tables/pmu.usno
+* Invoke glorg
+ org_cmd glorg_comb.cmd
+* Print file options
+ crt_opt NOPR
+ prt_opt NOPR GDLF CMDS MIDP
+ org_opt PSUM CMDS GDLF MIDP FIXA RNRP
+# sh_glred will name the glorg print files
+* Coordinate parameters to be estimated and a priori constraints
+ apr_neu  all 10 10 10  0 0 0
+* Rotation parameters to be estimated and a priori constraints
+ apr_wob  5 5 0 0
+ apr_ut1  5 0
+# If combining with global h-files, allow EOPS to change
+# between days
+# EOP tight if translation-only stabilization in glorg
+* Write out a combined H-file
+# Can substitute your analysis name for 'COMB' in the file name below
+COMB out_glb  H------_COMB.GLX
+* Optionally put a uselist and/or sig_neu and mar_neu reweight in a source file
+* Turn off quake log estimates if in the eq_file
+ free_log -1
+* Remove scratch files for repeatability runs
+  del_scra yes
+* Correct the pole tide when not compatible with GAMIT
+  app_ptid all
+* If orbits free in GAMIT (RELAX) and you want them fixed, use:
+* but if you are combining with globk h-files, better to leave them
+* on but, if the models are incompatible, turn off radiation-pressure parameters,
+* When using MIT GLX files which have satellite phase center positions
+* estimated use:
+  apr_svan all  F F F     ! Fix antenna offset to IGS apriori values.
+-------------------------------------------------------------------------------
+
+ Summary of GLORG command file glorg_comb.cmd
+-------------------------------------------------------------------------------
+* Glorg command file for daily repeatabilities or combinations
+* Last edited by rwk 130701
+* Parameters to be estimated
+ pos_org  xtran ytran ztran xrot yrot zrot
+#   or if translation-only
+* Downweight of height relative to horizontal (default is 10)
+#   Heavy downweight if reference frame robust and heights suspect
+* Controls for removing sites from the stabilization
+#   Vary these to make the stabilization more robust or more precise
+ stab_it 4 0.8 3.0
+* A priori coordinates
+#  ITRF2008 may be replaced by an apr file from a priori velocity solution
+ apr_file ../tables/itrf08_comb.apr
+* List of stabilization sites
+#   This should match the well-determined sites in the apr_file
+ stab_site clear
+ source ../tables/igb08_hierarchy.stab_site
+SOURCE ># Sites in IGb08 network hierarchy from ftp://igs-rf.ign.fr/pub/IGb08/IGb08_core.txt
+SOURCE ># Created with core2stab_site.sh by Mike Floyd on 2014-08-08
+SOURCE > stab_site AREQ
+SOURCE > stab_site CRO1
+SOURCE > stab_site DAV1
+SOURCE > stab_site GUAM
+SOURCE > stab_site HOB2
+SOURCE > stab_site KERG
+SOURCE > stab_site KIRU
+SOURCE > stab_site MATE
+SOURCE > stab_site NYAL
+SOURCE > stab_site POL2
+SOURCE > stab_site REYK
+SOURCE > stab_site TOW2
+SOURCE > stab_site TRAK
+SOURCE > stab_site USUD
+SOURCE > stab_site VILL
+SOURCE > stab_site WTZR
+SOURCE > stab_site YELL
+SOURCE > stab_site ZIMM
+SOURCE > 
+SOURCE > 
+-------------------------------------------------------------------------------
+
+ EXPERIMENT LIST from L1508211200_thss.srt
+     #  Name                               SCALE Diag PPM  Forw Chi2 Back Chi2 Status
+     1 ../glbf/h1508211200_thss.glx     1.000000   0.000     0.000    -1.000   USED        
+
+ SUMMARY POSITION ESTIMATES FROM GLOBK Ver 5.29        
+    Long.       Lat.        dE adj.   dN adj.   dE +-     dN +-   RHO        dH adj.   dH +-  SITE
+    (deg)      (deg)         (mm)      (mm)      (mm)      (mm)               (mm)      (mm)
+  356.04802   40.44359      -4.86      6.65      1.25      1.40  0.165       32.94      5.28 VILL_GPS*
+  338.04451   64.13879     -24.20     15.48      1.29      1.67  0.079      -38.95      4.77 REYK_GPS 
+  295.41568   17.75690       0.16     -1.60      1.53      1.68  0.147      -22.50      5.88 CRO1_GPS*
+  288.50720  -16.46552    -712.31   -485.13      2.17      3.13  0.144        8.09      5.82 AREQ_GPS 
+  245.51929   62.48089       3.99     18.48      1.45      1.50 -0.087       15.72      3.66 YELL_GPS 
+  242.19656   33.61794      -4.55     -9.49      1.30      1.37  0.225      -16.16      3.97 TRAK_GPS*
+  147.43874  -42.80471       6.83      4.33      1.01      1.43  0.419      -18.08      4.50 HOB2_GPS*
+  147.05569  -19.26927       9.52     19.14      1.39      2.36  0.262       -6.01      4.42 TOW2_GPS 
+  144.86836   13.58933      20.60    -23.12      1.93      2.88 -0.047      -18.28      6.96 GUAM_GPS 
+  138.36205   36.13311     484.66     42.13      1.72      2.75 -0.070      -32.43      6.30 USUD_GPS 
+   77.97261  -68.57732      -9.68      0.95      1.58      1.06  0.118        4.34      4.61 DAV1_GPS*
+   74.69427   42.67977      -6.12      3.67      1.27      1.44 -0.248       -8.58      3.59 POL2_GPS*
+   70.25552  -49.35147       8.22      0.08      1.79      1.62 -0.415      -15.77      4.92 KERG_GPS*
+   20.96845   67.85735       5.45      1.19      0.86      1.05  0.103       -4.11      3.84 KIRU_GPS*
+   16.70446   40.64913      -2.08      2.55      1.04      1.05 -0.066        6.72      4.32 MATE_GPS*
+   12.87891   49.14420       1.47     -1.82      0.86      0.96  0.052       -3.39      3.52 WTZR_GPS*
+   11.86509   78.92959       2.72     -4.52      0.74      0.93  0.081      -13.03      3.91 NYAL_GPS*
+    7.46528   46.87710       1.38     -2.49      0.70      0.77  0.078        1.89      2.92 ZIMM_GPS*
+POS STATISTICS: For   12 RefSites WRMS ENU   4.37   3.76  12.79  mm    NRMS ENU   4.27   3.32   3.15 L1508211200_thss.glx
+POS MEANS: For   12 RefSites: East   0.95 +-   1.26 North  -0.58 +-   1.09 Up  -4.55 +-   3.69 mm L1508211200_thss.glx
+
+ PARAMETER ESTIMATES FROM GLOBK Vers 5.29        
+  #      PARAMETER                            Estimate       Adjustment     Sigma
+Int. VILL_GPS  4849833.68541  -335049.02412  4116014.92373   -0.01055    0.02001    0.01155 2005.002
+    1. VILL_GPS X coordinate  (m)          4849833.59367      0.02046      0.00414
+    2. VILL_GPS Y coordinate  (m)          -335048.81759     -0.00628      0.00129
+    3. VILL_GPS Z coordinate  (m)          4116015.07292      0.02636      0.00354
+Unc. VILL_GPS  4849833.59367  -335048.81759  4116015.07292   -0.01055    0.02001    0.01155 2015.637  0.0041  0.0013  0.0035
+Apr. VILL_GPS  4849833.59367  -335048.81759  4116015.07292   -0.01055    0.02001    0.01155 2015.637  0.0041  0.0013  0.0035  -1.0000 -1.0000 -1.0000
+Loc.   VILL_GPS N coordinate  (m)          4502160.39374      0.00665      0.00140
+Loc.   VILL_GPS E coordinate  (m)         30163504.14719     -0.00486      0.00125
+Loc.   VILL_GPS U coordinate  (m)              647.34689      0.03294      0.00528
+     NE,NU,EU position correlations          0.1651      -0.0328       0.0034
+pbo. VILL_GPS ----------------  2015 08 21 11 59 57255.4998   4849833.59367  -335048.81759  4116015.07292 0.00414 0.00129 0.00354 -0.233  0.866 -0.140 |    40.4435949326  356.0480231414  647.34689     12.6    14.8    0.00528 |   4502160.39374 30163504.14719  647.34689 0.00140 0.00125 0.00528  0.165 -0.033  0.003
+
+Int. REYK_GPS  2587384.32846 -1043033.51334  5716564.04602   -0.01961   -0.00176    0.00895 2005.002
+    4. REYK_GPS X coordinate  (m)          2587384.08211     -0.03779      0.00231
+    5. REYK_GPS Y coordinate  (m)         -1043033.54291     -0.01085      0.00145
+    6. REYK_GPS Z coordinate  (m)          5716564.11299     -0.02821      0.00445
+Unc. REYK_GPS  2587384.08211 -1043033.54291  5716564.11299   -0.01961   -0.00176    0.00895 2015.637  0.0023  0.0015  0.0044
+Apr. REYK_GPS  2587384.08211 -1043033.54291  5716564.11299   -0.01961   -0.00176    0.00895 2015.637  0.0023  0.0015  0.0044  -1.0000 -1.0000 -1.0000
+Loc.   REYK_GPS N coordinate  (m)          7139897.00897      0.01548      0.00167
+Loc.   REYK_GPS E coordinate  (m)         16413892.58009     -0.02420      0.00129
+Loc.   REYK_GPS U coordinate  (m)               93.01415     -0.03895      0.00477
+     NE,NU,EU position correlations          0.0792       0.1354       0.1232
+pbo. REYK_GPS ----------------  2015 08 21 11 59 57255.4998   2587384.08211 -1043033.54291  5716564.11299 0.00231 0.00145 0.00445 -0.389  0.679 -0.309 |    64.1387861020  338.0445120955   93.01415     15.0    26.5    0.00477 |   7139897.00897 16413892.58009   93.01415 0.00167 0.00129 0.00477  0.079  0.135  0.123
+
+Int. CRO1_GPS  2607771.21531 -5488076.69905  1932767.78997    0.00742    0.00906    0.01252 2005.002
+    7. CRO1_GPS X coordinate  (m)          2607771.28537     -0.00885      0.00279
+    8. CRO1_GPS Y coordinate  (m)         -5488076.58370      0.01900      0.00499
+    9. CRO1_GPS Z coordinate  (m)          1932767.91477     -0.00835      0.00265
+Unc. CRO1_GPS  2607771.28537 -5488076.58370  1932767.91477    0.00742    0.00906    0.01252 2015.637  0.0028  0.0050  0.0027
+Apr. CRO1_GPS  2607771.28537 -5488076.58370  1932767.91477    0.00742    0.00906    0.01252 2015.637  0.0028  0.0050  0.0027  -1.0000 -1.0000 -1.0000
+Loc.   CRO1_GPS N coordinate  (m)          1976689.00975     -0.00160      0.00168
+Loc.   CRO1_GPS E coordinate  (m)         31319027.59927      0.00016      0.00153
+Loc.   CRO1_GPS U coordinate  (m)              -31.98254     -0.02250      0.00588
+     NE,NU,EU position correlations          0.1470       0.2291       0.0592
+pbo. CRO1_GPS ----------------  2015 08 21 11 59 57255.4998   2607771.28537 -5488076.58370  1932767.91477 0.00279 0.00499 0.00265 -0.798  0.702 -0.735 |    17.7568994941  295.4156812630  -31.98254     15.1    14.4    0.00588 |   1976689.00975 31319027.59927  -31.98254 0.00168 0.00153 0.00588  0.147  0.229  0.059
+
+Int. AREQ_GPS  1942826.82329 -5804070.23825 -1796893.84451    0.01247    0.00007    0.01400 2005.002
+   10. AREQ_GPS X coordinate  (m)          1942826.23953     -0.71638      0.00302
+   11. AREQ_GPS Y coordinate  (m)         -5804070.34138     -0.10387      0.00565
+   12. AREQ_GPS Z coordinate  (m)         -1796894.16338     -0.46776      0.00269
+Unc. AREQ_GPS  1942826.23953 -5804070.34138 -1796894.16338    0.01247    0.00007    0.01400 2015.637  0.0030  0.0057  0.0027
+Apr. AREQ_GPS  1942826.23953 -5804070.34138 -1796894.16338    0.01247    0.00007    0.01400 2015.637  0.0030  0.0057  0.0027  -1.0000 -1.0000 -1.0000
+Loc.   AREQ_GPS N coordinate  (m)         -1832932.86145     -0.48513      0.00313
+Loc.   AREQ_GPS E coordinate  (m)         30799610.96727     -0.71231      0.00217
+Loc.   AREQ_GPS U coordinate  (m)             2488.91717      0.00809      0.00582
+     NE,NU,EU position correlations          0.1443       0.4497       0.1447
+pbo. AREQ_GPS ----------------  2015 08 21 11 59 57255.4998   1942826.23953 -5804070.34138 -1796894.16338 0.00302 0.00565 0.00269 -0.654  0.064 -0.014 |   -16.4655160420  288.5072037216 2488.91717     28.1    20.3    0.00582 |  -1832932.86145 30799610.96727 2488.91717 0.00313 0.00217 0.00582  0.144  0.450  0.145
+
+Int. YELL_GPS -1224452.50143 -2689216.10746  5633638.27862   -0.02082   -0.00441   -0.00093 1997.002
+   13. YELL_GPS X coordinate  (m)         -1224452.88203      0.00738      0.00135
+   14. YELL_GPS Y coordinate  (m)         -2689216.18305      0.00660      0.00207
+   15. YELL_GPS Z coordinate  (m)          5633638.28379      0.02251      0.00341
+Unc. YELL_GPS -1224452.88203 -2689216.18305  5633638.28379   -0.02082   -0.00441   -0.00093 2015.637  0.0013  0.0021  0.0034
+Apr. YELL_GPS -1224452.88203 -2689216.18305  5633638.28379   -0.02082   -0.00441   -0.00093 2015.637  0.0013  0.0021  0.0034  -1.0000 -1.0000 -1.0000
+Loc.   YELL_GPS N coordinate  (m)          6955341.17565      0.01848      0.00150
+Loc.   YELL_GPS E coordinate  (m)         12628197.11712      0.00399      0.00145
+Loc.   YELL_GPS U coordinate  (m)              180.96734      0.01572      0.00366
+     NE,NU,EU position correlations         -0.0873       0.1491       0.2659
+pbo. YELL_GPS ----------------  2015 08 21 11 59 57255.4998  -1224452.88203 -2689216.18305  5633638.28379 0.00135 0.00207 0.00341  0.058 -0.140 -0.598 |    62.4808928435  245.5192949560  180.96734     13.5    28.3    0.00366 |   6955341.17565 12628197.11712  180.96734 0.00150 0.00145 0.00366 -0.087  0.149  0.266
+
+Int. TRAK_GPS -2480029.24905 -4703110.82031  3511298.59513   -0.02924    0.02645    0.01537 2005.002
+   16. TRAK_GPS X coordinate  (m)         -2480029.56019     -0.00017      0.00175
+   17. TRAK_GPS Y coordinate  (m)         -4703110.52958      0.00943      0.00317
+   18. TRAK_GPS Z coordinate  (m)          3511298.74177     -0.01682      0.00250
+Unc. TRAK_GPS -2480029.56019 -4703110.52958  3511298.74177   -0.02924    0.02645    0.01537 2015.637  0.0017  0.0032  0.0025
+Apr. TRAK_GPS -2480029.56019 -4703110.52958  3511298.74177   -0.02924    0.02645    0.01537 2015.637  0.0017  0.0032  0.0025  -1.0000 -1.0000 -1.0000
+Loc.   TRAK_GPS N coordinate  (m)          3742331.55273     -0.00949      0.00137
+Loc.   TRAK_GPS E coordinate  (m)         22451843.07606     -0.00455      0.00130
+Loc.   TRAK_GPS U coordinate  (m)              115.53052     -0.01616      0.00397
+     NE,NU,EU position correlations          0.2253       0.0295       0.2627
+pbo. TRAK_GPS ----------------  2015 08 21 11 59 57255.4998  -2480029.56019 -4703110.52958  3511298.74177 0.00175 0.00317 0.00250  0.633 -0.473 -0.786 |    33.6179363206  242.1965619107  115.53052     12.3    14.0    0.00397 |   3742331.55273 22451843.07606  115.53052 0.00137 0.00130 0.00397  0.225  0.029  0.263
+
+Int. HOB2_GPS -3950071.67350  2522415.25416 -4311638.02559   -0.03974    0.00862    0.04074 2005.002
+   19. HOB2_GPS X coordinate  (m)         -3950072.09107      0.00507      0.00263
+   20. HOB2_GPS Y coordinate  (m)          2522415.33450     -0.01134      0.00204
+   21. HOB2_GPS Z coordinate  (m)         -4311637.57689      0.01542      0.00350
+Unc. HOB2_GPS -3950072.09107  2522415.33450 -4311637.57689   -0.03974    0.00862    0.04074 2015.637  0.0026  0.0020  0.0035
+Apr. HOB2_GPS -3950072.09107  2522415.33450 -4311637.57689   -0.03974    0.00862    0.04074 2015.637  0.0026  0.0020  0.0035  -1.0000 -1.0000 -1.0000
+Loc.   HOB2_GPS N coordinate  (m)         -4764998.22088      0.00433      0.00143
+Loc.   HOB2_GPS E coordinate  (m)         12041419.29868      0.00683      0.00101
+Loc.   HOB2_GPS U coordinate  (m)               41.04283     -0.01808      0.00450
+     NE,NU,EU position correlations          0.4189      -0.2876      -0.2997
+pbo. HOB2_GPS ----------------  2015 08 21 11 59 57255.4998  -3950072.09107  2522415.33450 -4311637.57689 0.00263 0.00204 0.00350 -0.808  0.765 -0.855 |   -42.8047073062  147.4387362517   41.04283     12.9    12.4    0.00450 |  -4764998.22088 12041419.29868   41.04283 0.00143 0.00101 0.00450  0.419 -0.288 -0.300
+
+Int. TOW2_GPS -5054582.94073  3275504.33760 -2091539.27586   -0.03094   -0.01432    0.05283 2005.002
+   22. TOW2_GPS X coordinate  (m)         -5054583.27546     -0.00568      0.00345
+   23. TOW2_GPS Y coordinate  (m)          3275504.17764     -0.00766      0.00249
+   24. TOW2_GPS Z coordinate  (m)         -2091538.69395      0.02005      0.00299
+Unc. TOW2_GPS -5054583.27546  3275504.17764 -2091538.69395   -0.03094   -0.01432    0.05283 2015.637  0.0034  0.0025  0.0030
+Apr. TOW2_GPS -5054583.27546  3275504.17764 -2091538.69395   -0.03094   -0.01432    0.05283 2015.637  0.0034  0.0025  0.0030  -1.0000 -1.0000 -1.0000
+Loc.   TOW2_GPS N coordinate  (m)         -2145045.82663      0.01914      0.00236
+Loc.   TOW2_GPS E coordinate  (m)         15453122.75283      0.00952      0.00139
+Loc.   TOW2_GPS U coordinate  (m)               88.11073     -0.00601      0.00442
+     NE,NU,EU position correlations          0.2621      -0.2872      -0.0585
+pbo. TOW2_GPS ----------------  2015 08 21 11 59 57255.4998  -5054583.27546  3275504.17764 -2091538.69395 0.00345 0.00249 0.00299 -0.759  0.493 -0.593 |   -19.2692745120  147.0556910773   88.11073     21.2    13.2    0.00442 |  -2145045.82663 15453122.75283   88.11073 0.00236 0.00139 0.00442  0.262 -0.287 -0.059
+
+Int. GUAM_GPS -5071312.73778  3568363.55234  1488904.35997    0.00611    0.00737    0.00522 2005.002
+   25. GUAM_GPS X coordinate  (m)         -5071312.67453     -0.00173      0.00587
+   26. GUAM_GPS Y coordinate  (m)          3568363.60675     -0.02397      0.00405
+   27. GUAM_GPS Z coordinate  (m)          1488904.38874     -0.02675      0.00309
+Unc. GUAM_GPS -5071312.67453  3568363.60675  1488904.38874    0.00611    0.00737    0.00522 2015.637  0.0059  0.0040  0.0031
+Apr. GUAM_GPS -5071312.67453  3568363.60675  1488904.38874    0.00611    0.00737    0.00522 2015.637  0.0059  0.0040  0.0031  -1.0000 -1.0000 -1.0000
+Loc.   GUAM_GPS N coordinate  (m)          1512757.27715     -0.02312      0.00288
+Loc.   GUAM_GPS E coordinate  (m)         15675134.90658      0.02060      0.00193
+Loc.   GUAM_GPS U coordinate  (m)              201.90888     -0.01828      0.00696
+     NE,NU,EU position correlations         -0.0468      -0.0995       0.1358
+pbo. GUAM_GPS ----------------  2015 08 21 11 59 57255.4998  -5071312.67453  3568363.60675  1488904.38874 0.00587 0.00405 0.00309 -0.834 -0.336  0.326 |    13.5893298323  144.8683602996  201.90888     25.8    17.8    0.00696 |   1512757.27715 15675134.90658  201.90888 0.00288 0.00193 0.00696 -0.047 -0.100  0.136
+
+Int. USUD_GPS -3855263.02241  3427432.54860  3741020.34317   -0.00468    0.00390   -0.00211 2005.002
+   28. USUD_GPS X coordinate  (m)         -3855263.35610     -0.28391      0.00438
+   29. USUD_GPS Y coordinate  (m)          3427432.19398     -0.39609      0.00386
+   30. USUD_GPS Z coordinate  (m)          3741020.33579      0.01506      0.00401
+Unc. USUD_GPS -3855263.35610  3427432.19398  3741020.33579   -0.00468    0.00390   -0.00211 2015.637  0.0044  0.0039  0.0040
+Apr. USUD_GPS -3855263.35610  3427432.19398  3741020.33579   -0.00468    0.00390   -0.00211 2015.637  0.0044  0.0039  0.0040  -1.0000 -1.0000 -1.0000
+Loc.   USUD_GPS N coordinate  (m)          4022319.46860      0.04213      0.00275
+Loc.   USUD_GPS E coordinate  (m)         12439689.58364      0.48466      0.00172
+Loc.   USUD_GPS U coordinate  (m)             1508.64289     -0.03243      0.00630
+     NE,NU,EU position correlations         -0.0698      -0.1542       0.0324
+pbo. USUD_GPS ----------------  2015 08 21 11 59 57255.4998  -3855263.35610  3427432.19398  3741020.33579 0.00438 0.00386 0.00401 -0.824 -0.613  0.623 |    36.1331105625  138.3620489794 1508.64289     24.7    19.1    0.00630 |   4022319.46860 12439689.58364 1508.64289 0.00275 0.00172 0.00630 -0.070 -0.154  0.032
+
+Int. DAV1_GPS   486854.55811  2285099.25423 -5914955.68461    0.00161   -0.00585   -0.00068 2005.002
+   31. DAV1_GPS X coordinate  (m)           486854.58522      0.00999      0.00140
+   32. DAV1_GPS Y coordinate  (m)          2285099.19242      0.00041      0.00211
+   33. DAV1_GPS Z coordinate  (m)         -5914955.69553     -0.00369      0.00429
+Unc. DAV1_GPS   486854.58522  2285099.19242 -5914955.69553    0.00161   -0.00585   -0.00068 2015.637  0.0014  0.0021  0.0043
+Apr. DAV1_GPS   486854.58522  2285099.19242 -5914955.69553    0.00161   -0.00585   -0.00068 2015.637  0.0014  0.0021  0.0043  -1.0000 -1.0000 -1.0000
+Loc.   DAV1_GPS N coordinate  (m)         -7633992.73462      0.00095      0.00106
+Loc.   DAV1_GPS E coordinate  (m)          3170252.84650     -0.00968      0.00158
+Loc.   DAV1_GPS U coordinate  (m)               44.37834      0.00434      0.00461
+     NE,NU,EU position correlations          0.1182       0.0200       0.4859
+pbo. DAV1_GPS ----------------  2015 08 21 11 59 57255.4998    486854.58522  2285099.19242 -5914955.69553 0.00140 0.00211 0.00429 -0.363  0.283 -0.824 |   -68.5773235237   77.9726122603   44.37834      9.5    38.8    0.00461 |  -7633992.73462  3170252.84650   44.37834 0.00106 0.00158 0.00461  0.118  0.020  0.486
+
+Int. POL2_GPS  1239971.36992  4530790.09428  4302578.81606   -0.02731    0.00533    0.00479 2005.002
+   34. POL2_GPS X coordinate  (m)          1239971.08305      0.00358      0.00149
+   35. POL2_GPS Y coordinate  (m)          4530790.14086     -0.01011      0.00239
+   36. POL2_GPS Z coordinate  (m)          4302578.86391     -0.00309      0.00293
+Unc. POL2_GPS  1239971.08305  4530790.14086  4302578.86391   -0.02731    0.00533    0.00479 2015.637  0.0015  0.0024  0.0029
+Apr. POL2_GPS  1239971.08305  4530790.14086  4302578.86391   -0.02731    0.00533    0.00479 2015.637  0.0015  0.0024  0.0029  -1.0000 -1.0000 -1.0000
+Loc.   POL2_GPS N coordinate  (m)          4751090.32309      0.00367      0.00144
+Loc.   POL2_GPS E coordinate  (m)          6112787.34082     -0.00612      0.00127
+Loc.   POL2_GPS U coordinate  (m)             1714.21732     -0.00858      0.00359
+     NE,NU,EU position correlations         -0.2477       0.3138      -0.2546
+pbo. POL2_GPS ----------------  2015 08 21 11 59 57255.4998   1239971.08305  4530790.14086  4302578.86391 0.00149 0.00239 0.00293  0.469  0.579  0.716 |    42.6797705346   74.6942685512 1714.21732     12.9    15.5    0.00359 |   4751090.32309  6112787.34082 1714.21732 0.00144 0.00127 0.00359 -0.248  0.314 -0.255
+
+Int. KERG_GPS  1406337.28912  3918161.09296 -4816167.35661   -0.00527   -0.00015   -0.00151 2005.002
+   37. KERG_GPS X coordinate  (m)          1406337.22188     -0.01120      0.00172
+   38. KERG_GPS Y coordinate  (m)          3918161.08449     -0.00687      0.00309
+   39. KERG_GPS Z coordinate  (m)         -4816167.36069      0.01198      0.00419
+Unc. KERG_GPS  1406337.22188  3918161.08449 -4816167.36069   -0.00527   -0.00015   -0.00151 2015.637  0.0017  0.0031  0.0042
+Apr. KERG_GPS  1406337.22188  3918161.08449 -4816167.36069   -0.00527   -0.00015   -0.00151 2015.637  0.0017  0.0031  0.0042  -1.0000 -1.0000 -1.0000
+Loc.   KERG_GPS N coordinate  (m)         -5493780.18262      0.00008      0.00162
+Loc.   KERG_GPS E coordinate  (m)          5094561.02817      0.00822      0.00179
+Loc.   KERG_GPS U coordinate  (m)               72.99142     -0.01577      0.00492
+     NE,NU,EU position correlations         -0.4146      -0.3276       0.4178
+pbo. KERG_GPS ----------------  2015 08 21 11 59 57255.4998   1406337.22188  3918161.08449 -4816167.36069 0.00172 0.00309 0.00419  0.145 -0.016 -0.843 |   -49.3514670564   70.2555228690   72.99142     14.5    24.7    0.00492 |  -5493780.18262  5094561.02817   72.99142 0.00162 0.00179 0.00492 -0.415 -0.328  0.418
+
+Int. KIRU_GPS  2251420.79504   862817.22093  5885476.70247   -0.01574    0.01076    0.01142 2005.002
+   40. KIRU_GPS X coordinate  (m)          2251420.62321     -0.00443      0.00159
+   41. KIRU_GPS Y coordinate  (m)           862817.33950      0.00414      0.00098
+   42. KIRU_GPS Z coordinate  (m)          5885476.82057     -0.00335      0.00363
+Unc. KIRU_GPS  2251420.62321   862817.33950  5885476.82057   -0.01574    0.01076    0.01142 2015.637  0.0016  0.0010  0.0036
+Apr. KIRU_GPS  2251420.62321   862817.33950  5885476.82057   -0.01574    0.01076    0.01142 2015.637  0.0016  0.0010  0.0036  -1.0000 -1.0000 -1.0000
+Loc.   KIRU_GPS N coordinate  (m)          7553845.97577      0.00119      0.00105
+Loc.   KIRU_GPS E coordinate  (m)           879765.03951      0.00545      0.00086
+Loc.   KIRU_GPS U coordinate  (m)              391.03828     -0.00411      0.00384
+     NE,NU,EU position correlations          0.1028       0.1202       0.0139
+pbo. KIRU_GPS ----------------  2015 08 21 11 59 57255.4998   2251420.62321   862817.33950  5885476.82057 0.00159 0.00098 0.00363  0.394  0.715  0.469 |    67.8573529392   20.9684513482  391.03828      9.5    20.6    0.00384 |   7553845.97577   879765.03951  391.03828 0.00105 0.00086 0.00384  0.103  0.120  0.014
+
+Int. MATE_GPS  4641949.55683  1393045.42466  4133287.46435   -0.01829    0.01899    0.01495 2005.002
+   43. MATE_GPS X coordinate  (m)          4641949.36623      0.00392      0.00320
+   44. MATE_GPS Y coordinate  (m)          1393045.62562     -0.00100      0.00150
+   45. MATE_GPS Z coordinate  (m)          4133287.62965      0.00630      0.00289
+Unc. MATE_GPS  4641949.36623  1393045.62562  4133287.62965   -0.01829    0.01899    0.01495 2015.637  0.0032  0.0015  0.0029
+Apr. MATE_GPS  4641949.36623  1393045.62562  4133287.62965   -0.01829    0.01899    0.01495 2015.637  0.0032  0.0015  0.0029  -1.0000 -1.0000 -1.0000
+Loc.   MATE_GPS N coordinate  (m)          4525040.84679      0.00255      0.00105
+Loc.   MATE_GPS E coordinate  (m)          1410869.25190     -0.00208      0.00104
+Loc.   MATE_GPS U coordinate  (m)              535.66348      0.00672      0.00432
+     NE,NU,EU position correlations         -0.0657      -0.0332       0.1448
+pbo. MATE_GPS ----------------  2015 08 21 11 59 57255.4998   4641949.36623  1393045.62562  4133287.62965 0.00320 0.00150 0.00289  0.687  0.883  0.656 |    40.6491335394   16.7044623195  535.66348      9.4    12.4    0.00432 |   4525040.84679  1410869.25190  535.66348 0.00105 0.00104 0.00432 -0.066 -0.033  0.145
+
+Int. WTZR_GPS  4075580.55298   931853.79721  4801568.13598   -0.01605    0.01713    0.01009 2005.002
+   46. WTZR_GPS X coordinate  (m)          4075580.38112     -0.00116      0.00239
+   47. WTZR_GPS Y coordinate  (m)           931853.98064      0.00125      0.00098
+   48. WTZR_GPS Z coordinate  (m)          4801568.23954     -0.00375      0.00271
+Unc. WTZR_GPS  4075580.38112   931853.98064  4801568.23954   -0.01605    0.01713    0.01009 2015.637  0.0024  0.0010  0.0027
+Apr. WTZR_GPS  4075580.38112   931853.98064  4801568.23954   -0.01605    0.01713    0.01009 2015.637  0.0024  0.0010  0.0027  -1.0000 -1.0000 -1.0000
+Loc.   WTZR_GPS N coordinate  (m)          5470707.31182     -0.00182      0.00096
+Loc.   WTZR_GPS E coordinate  (m)           937828.87642      0.00147      0.00086
+Loc.   WTZR_GPS U coordinate  (m)              666.02346     -0.00339      0.00352
+     NE,NU,EU position correlations          0.0523      -0.0233      -0.0179
+pbo. WTZR_GPS ----------------  2015 08 21 11 59 57255.4998   4075580.38112   931853.98064  4801568.23954 0.00239 0.00098 0.00271  0.457  0.855  0.472 |    49.1441999315   12.8789127365  666.02346      8.6    11.7    0.00352 |   5470707.31182   937828.87642  666.02346 0.00096 0.00086 0.00352  0.052 -0.023 -0.018
+
+Int. NYAL_GPS  1202430.53162   252626.70891  6237767.61729   -0.01430    0.00750    0.01103 2005.002
+   49. NYAL_GPS X coordinate  (m)          1202430.38085      0.00131      0.00112
+   50. NYAL_GPS Y coordinate  (m)           252626.79173      0.00306      0.00075
+   51. NYAL_GPS Z coordinate  (m)          6237767.72094     -0.01366      0.00386
+Unc. NYAL_GPS  1202430.38085   252626.79173  6237767.72094   -0.01430    0.00750    0.01103 2015.637  0.0011  0.0008  0.0039
+Apr. NYAL_GPS  1202430.38085   252626.79173  6237767.72094   -0.01430    0.00750    0.01103 2015.637  0.0011  0.0008  0.0039  -1.0000 -1.0000 -1.0000
+Loc.   NYAL_GPS N coordinate  (m)          8786401.33617     -0.00452      0.00093
+Loc.   NYAL_GPS E coordinate  (m)           253597.11052      0.00272      0.00074
+Loc.   NYAL_GPS U coordinate  (m)               78.59044     -0.01303      0.00391
+     NE,NU,EU position correlations          0.0811       0.1058       0.0334
+pbo. NYAL_GPS ----------------  2015 08 21 11 59 57255.4998   1202430.38085   252626.79173  6237767.72094 0.00112 0.00075 0.00386  0.130  0.534  0.204 |    78.9295861269   11.8650917436   78.59044      8.4    34.8    0.00391 |   8786401.33617   253597.11052   78.59044 0.00093 0.00074 0.00391  0.081  0.106  0.033
+
+Int. ZIMM_GPS  4331297.06286   567555.87751  4633133.93566   -0.01353    0.01807    0.01205 2005.002
+   52. ZIMM_GPS X coordinate  (m)          4331296.92186      0.00290      0.00204
+   53. ZIMM_GPS Y coordinate  (m)           567556.07146      0.00178      0.00074
+   54. ZIMM_GPS Z coordinate  (m)          4633134.06348     -0.00033      0.00221
+Unc. ZIMM_GPS  4331296.92186   567556.07146  4633134.06348   -0.01353    0.01807    0.01205 2015.637  0.0020  0.0007  0.0022
+Apr. ZIMM_GPS  4331296.92186   567556.07146  4633134.06348   -0.01353    0.01807    0.01205 2015.637  0.0020  0.0007  0.0022  -1.0000 -1.0000 -1.0000
+Loc.   ZIMM_GPS N coordinate  (m)          5218334.79879     -0.00249      0.00077
+Loc.   ZIMM_GPS E coordinate  (m)           568072.37867      0.00138      0.00070
+Loc.   ZIMM_GPS U coordinate  (m)              956.34693      0.00189      0.00292
+     NE,NU,EU position correlations          0.0780       0.0393       0.0195
+pbo. ZIMM_GPS ----------------  2015 08 21 11 59 57255.4998   4331296.92186   567556.07146  4633134.06348 0.00204 0.00074 0.00221  0.315  0.865  0.347 |    46.8770990740    7.4652795456  956.34693      7.0     9.2    0.00292 |   5218334.79879   568072.37867  956.34693 0.00077 0.00070 0.00292  0.078  0.039  0.019
+
+Eph. #IC 15 233 12  0  0                    GPST J2000 IAU76 BERNE
+   55. PRN_0163 AntOffest X   (m)                0.39400      0.00000      0.00000
+   56. PRN_0163 AntOffest Y   (m)                             0.00000      0.00000
+   57. PRN_0163 AntOffest Z   (m)                1.56130      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0163         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.56130
+
+   58. PRN_0261 AntOffest X   (m)                             0.00000      0.00000
+   59. PRN_0261 AntOffest Y   (m)                             0.00000      0.00000
+   60. PRN_0261 AntOffest Z   (m)                0.77860      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0261         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.77860
+
+   61. PRN_0369 AntOffest X   (m)                0.39400      0.00000      0.00000
+   62. PRN_0369 AntOffest Y   (m)                             0.00000      0.00000
+   63. PRN_0369 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0369         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+   64. PRN_0434 AntOffest X   (m)                0.27900      0.00000      0.00000
+   65. PRN_0434 AntOffest Y   (m)                             0.00000      0.00000
+   66. PRN_0434 AntOffest Z   (m)                2.42000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0434         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.27900   0.00000   2.42000
+
+   67. PRN_0550 AntOffest X   (m)                             0.00000      0.00000
+   68. PRN_0550 AntOffest Y   (m)                             0.00000      0.00000
+   69. PRN_0550 AntOffest Z   (m)                0.82260      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0550         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.82260
+
+   70. PRN_0667 AntOffest X   (m)                0.39400      0.00000      0.00000
+   71. PRN_0667 AntOffest Y   (m)                             0.00000      0.00000
+   72. PRN_0667 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0667         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+   73. PRN_0748 AntOffest X   (m)                             0.00000      0.00000
+   74. PRN_0748 AntOffest Y   (m)                             0.00000      0.00000
+   75. PRN_0748 AntOffest Z   (m)                0.85290      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0748         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.85290
+
+   76. PRN_0872 AntOffest X   (m)                0.39400      0.00000      0.00000
+   77. PRN_0872 AntOffest Y   (m)                             0.00000      0.00000
+   78. PRN_0872 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0872         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+   79. PRN_0968 AntOffest X   (m)                0.39400      0.00000      0.00000
+   80. PRN_0968 AntOffest Y   (m)                             0.00000      0.00000
+   81. PRN_0968 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_0968         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+   82. PRN_1146 AntOffest X   (m)                             0.00000      0.00000
+   83. PRN_1146 AntOffest Y   (m)                             0.00000      0.00000
+   84. PRN_1146 AntOffest Z   (m)                1.14130      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1146         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.14130
+
+   85. PRN_1258 AntOffest X   (m)                             0.00000      0.00000
+   86. PRN_1258 AntOffest Y   (m)                             0.00000      0.00000
+   87. PRN_1258 AntOffest Z   (m)                0.84080      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1258         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.84080
+
+   88. PRN_1343 AntOffest X   (m)                             0.00000      0.00000
+   89. PRN_1343 AntOffest Y   (m)                             0.00000      0.00000
+   90. PRN_1343 AntOffest Z   (m)                1.38950      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1343         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.38950
+
+   91. PRN_1441 AntOffest X   (m)                             0.00000      0.00000
+   92. PRN_1441 AntOffest Y   (m)                             0.00000      0.00000
+   93. PRN_1441 AntOffest Z   (m)                1.34540      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1441         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.34540
+
+   94. PRN_1555 AntOffest X   (m)                             0.00000      0.00000
+   95. PRN_1555 AntOffest Y   (m)                             0.00000      0.00000
+   96. PRN_1555 AntOffest Z   (m)                0.68110      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1555         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.68110
+
+   97. PRN_1656 AntOffest X   (m)                             0.00000      0.00000
+   98. PRN_1656 AntOffest Y   (m)                             0.00000      0.00000
+   99. PRN_1656 AntOffest Z   (m)                1.50640      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1656         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.50640
+
+  100. PRN_1753 AntOffest X   (m)                             0.00000      0.00000
+  101. PRN_1753 AntOffest Y   (m)                             0.00000      0.00000
+  102. PRN_1753 AntOffest Z   (m)                0.82710      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1753         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.82710
+
+  103. PRN_1854 AntOffest X   (m)                             0.00000      0.00000
+  104. PRN_1854 AntOffest Y   (m)                             0.00000      0.00000
+  105. PRN_1854 AntOffest Z   (m)                1.29090      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1854         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.29090
+
+  106. PRN_1959 AntOffest X   (m)                             0.00000      0.00000
+  107. PRN_1959 AntOffest Y   (m)                             0.00000      0.00000
+  108. PRN_1959 AntOffest Z   (m)                0.84960      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_1959         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.84960
+
+  109. PRN_2051 AntOffest X   (m)                             0.00000      0.00000
+  110. PRN_2051 AntOffest Y   (m)                             0.00000      0.00000
+  111. PRN_2051 AntOffest Z   (m)                1.34360      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2051         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.34360
+
+  112. PRN_2145 AntOffest X   (m)                             0.00000      0.00000
+  113. PRN_2145 AntOffest Y   (m)                             0.00000      0.00000
+  114. PRN_2145 AntOffest Z   (m)                1.40540      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2145         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.40540
+
+  115. PRN_2247 AntOffest X   (m)                             0.00000      0.00000
+  116. PRN_2247 AntOffest Y   (m)                             0.00000      0.00000
+  117. PRN_2247 AntOffest Z   (m)                0.90580      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2247         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.90580
+
+  118. PRN_2360 AntOffest X   (m)                             0.00000      0.00000
+  119. PRN_2360 AntOffest Y   (m)                             0.00000      0.00000
+  120. PRN_2360 AntOffest Z   (m)                0.80820      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2360         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.80820
+
+  121. PRN_2465 AntOffest X   (m)                0.39400      0.00000      0.00000
+  122. PRN_2465 AntOffest Y   (m)                             0.00000      0.00000
+  123. PRN_2465 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2465         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+  124. PRN_2562 AntOffest X   (m)                0.39400      0.00000      0.00000
+  125. PRN_2562 AntOffest Y   (m)                             0.00000      0.00000
+  126. PRN_2562 AntOffest Z   (m)                1.59730      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2562         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.59730
+
+  127. PRN_2671 AntOffest X   (m)                0.39400      0.00000      0.00000
+  128. PRN_2671 AntOffest Y   (m)                             0.00000      0.00000
+  129. PRN_2671 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2671         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+  130. PRN_2766 AntOffest X   (m)                0.39400      0.00000      0.00000
+  131. PRN_2766 AntOffest Y   (m)                             0.00000      0.00000
+  132. PRN_2766 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2766         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+  133. PRN_2844 AntOffest X   (m)                             0.00000      0.00000
+  134. PRN_2844 AntOffest Y   (m)                             0.00000      0.00000
+  135. PRN_2844 AntOffest Z   (m)                1.04280      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2844         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   1.04280
+
+  136. PRN_2957 AntOffest X   (m)                             0.00000      0.00000
+  137. PRN_2957 AntOffest Y   (m)                             0.00000      0.00000
+  138. PRN_2957 AntOffest Z   (m)                0.85710      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_2957         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.85710
+
+  139. PRN_3064 AntOffest X   (m)                0.39400      0.00000      0.00000
+  140. PRN_3064 AntOffest Y   (m)                             0.00000      0.00000
+  141. PRN_3064 AntOffest Z   (m)                1.60000      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_3064         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.39400   0.00000   1.60000
+
+  142. PRN_3152 AntOffest X   (m)                             0.00000      0.00000
+  143. PRN_3152 AntOffest Y   (m)                             0.00000      0.00000
+  144. PRN_3152 AntOffest Z   (m)                0.97140      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_3152         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.97140
+
+  145. PRN_3223 AntOffest X   (m)                0.27900      0.00000      0.00000
+  146. PRN_3223 AntOffest Y   (m)                             0.00000      0.00000
+  147. PRN_3223 AntOffest Z   (m)                2.77720      0.00000      0.00000
+Eph.  2015  8 21 11 PRN_3223         0.0000         0.0000         0.0000        0.00000        0.00000        0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.00000   0.27900   0.00000   2.77720
+
+  148. X-pole position        (mas)            220.64609      0.01009      0.04349
+  149. Y-pole position        (mas)            387.39491     -0.05709      0.03904
+
+  150. UT1-AT                 (ms)          -35715.94954      0.00146      0.00160
+      Pole/UT1 correlations: XY, XU, YU          0.5756    -0.0222     0.0402
+
+IERS  MJD      Xpole   Ypole  UT1-UTC    LOD  Xsig  Ysig   UTsig  LODsig  Nr Nf Nt    Xrt    Yrt  Xrtsig  Yrtsig XYcorr XUTcor YUTcor
+IERS             (10**-6")       (0.1 usec)    (10**-6")     (0.1 usec)              (10**-6"/d)    (10**-6"/d)
+IERS57255.50  220646  387395  2840505   8400    43    39      16       0  18 12 31   1108  -1989      0      0    0.576 -0.022  0.040
+
+
