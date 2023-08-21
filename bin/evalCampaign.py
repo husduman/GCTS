@@ -307,7 +307,7 @@ def main():
             for k in range(args.nRND):
                 C = cWN + (yFNA[k]**2 * J)
                 _, _, s0, _ = ls._lse(A, L, la.cholesky(la.inv(C)).T)
-                resultTemp[idx,:] = [yWNA[j], yFNA[k], s0]
+                resultTemp[idx,:] = [yWNA[j][0], yFNA[k][0], s0]
                 idx += 1
         #np.savetxt('15-s0s.dat', resultTemp, fmt="%10.10f")
         xx     = np.arange(min(resultTemp[:,0]), max(resultTemp[:,0]), args.incr)
