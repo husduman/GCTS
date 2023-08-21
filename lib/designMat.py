@@ -65,7 +65,7 @@ class designMat:
 
         A = np.zeros((len(datesNew),(2 + len(cycle)*2 + len(offset))), dtype=float)
         for i in range(len(datesNew)):
-            A[i,[0,1]] = [1, (datesNew[i] - datesNew[0])/self.Fs]
+            A[i,[0,1]] = [1, (datesNew[i][0] - datesNew[0][0])/self.Fs]
             if offsetNew is not None:
                 for j in range(len(offsetNew)):
                     if datesNew[i] < offsetNew[j]:
